@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>子元素选择器</title>
+	<style>
+	/*选择该父级下的第（）个子级，同级（直系子级）。
+	  同级混杂时，顺序正常，如果是该标签则改变，如果不是该标签则数进去跳过不变化*/
+	/*.wrap div 的父级wrap下的第（）个子级：从0开始的正整数*/
+		.wrap div:nth-child(3n+2){
+			color: red;
+		}
+		/*用法相同，只是从后向前数*/
+		.wrap div:nth-last-child(3n+2){
+			color: green;
+		}
+		/*第一个div*/
+		.wrap div:first-child{
+			color: #bba3af;
+		}
+		/*最后一个div*/
+		.wrap div:last-child{
+
+		}
+
+
+	/*数的时候，只计算该标签*/
+		.wrap div:nth-of-type(2n){
+		color: blue;
+		}
+		/*倒数，只计算该标签，其余的直接跳过*/
+		.wrap div:nth-last-of-type(2n){
+			color: #bbb;
+		}
+		/*第一个div标签，前面不是的直接跳过，忽视*/
+		.wrap div:first-of-type{
+
+		}
+		/*最后一个div标签，后面不是div的直接跳过*/
+		.wrap div:last-of-type{
+
+		}
+
+		
+		/*wrap里面所有p标签（不管是子辈还是孙子辈）的父级，只有p标签一个孩子，独生子*/
+		.wrap p:only-child{
+			background-color: red;
+		}
+		/*wrap里面所有p标签（不管是子辈还是孙子辈）的父级，它的子级可以有多个，但是只有一个p标签子级：一群兄弟姐妹中只有一个女生*/
+		.wrap p:only-of-type{
+			background-color: green;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<!-- <div>1</div> -->
+		<a href="">a</a>
+		<div>2</div>
+		<p>p</p>
+		<div>
+			<p>11</p>
+			<p>12</p>
+		</div>
+		<div>4</div>
+		<h1>5</h1>
+		<div>6</div>
+		<div>7</div>
+	</div>
+
+</body>
+</html>

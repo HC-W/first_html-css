@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>属性选择器</title>
+	<style type="text/css">
+	/*匹配带有该属性的标签：属性为href的所有标签*/
+		a[href]{
+			color: red;
+		}
+		/*匹配带有该属性和属性的值的标签*/
+		a[href="http://www.baidu.com"] {
+			background-color: green;
+		}
+		/*匹配属性中包含该单词的标签，区分于单个的，以空格开始和结尾*/
+		a[href~="#"] {
+			background-color: yellow;
+		}
+		/*匹配该属性中以该字符开头的标签，“-”区分*/
+		a[href|="#"] {
+			background-color: black;
+		}
+		/*匹配该属性中以该字符开头的标签，不区分*/
+		a[href^="#"] {
+			background-color: #fff;
+		}
+		/*匹配该属性中以该字符结尾的标签，不区分*/
+		a[href$="#"] {
+			background-color: #ccc;
+		}
+		/*匹配该属性中包含该字符的标签，不区分*/
+		a[href*="#"] {
+			background-color: #aaa;
+		}
+	</style>
+</head>
+<body>
+	<a href="">123</a>
+	<p href="">444</p>
+
+	<a href="http://www.baidu.com">百度</a>
+	<a href="# #">333</a>
+	<a href="#-# $">333</a>
+	<a href="#$$#-#">666</a>
+	<a href="%%^-#">777</a>
+</body>
+</html>

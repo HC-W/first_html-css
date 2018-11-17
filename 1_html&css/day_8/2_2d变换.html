@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>2d变换</title>
+	<style type="text/css">
+		.div1{
+			width: 200px;
+			height: 200px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin-top: -100px;
+			margin-left: -100px;
+
+			background-color: red;
+			transition: all 1s;
+			
+
+			/*2d变换基准点*/
+			transform-origin: top center;
+			
+		}
+		.div1:hover{
+			/*变换*/
+			/*移动:translate()*/
+			transform: translateX(300px);
+
+			/*旋转，跳跃
+			默认绕着Z轴转*/
+			transform: rotate(1000deg);
+
+			/*缩放:没有Z收缩放
+			括号里面是倍数，默认为1，自己本身的大小
+			scaleX
+			scaleY*/
+			transform: scale(2);
+
+			/*倾斜*/
+			transform: skew(-45deg ,-45deg);
+
+			/*组合使用:先后顺序不同效果不同*/
+			transform: rotate(1000deg) translate(100px,100px) scale(0.5);
+		}
+	</style>
+</head>
+<body>
+	<!-- 变换：移动、旋转、缩放、倾斜（不常用） -->
+	<div class="div1">
+		
+	</div>
+</body>
+</html>

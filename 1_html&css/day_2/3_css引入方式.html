@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>css样式</title>
+	<!-- 3，外部引入 ，多用于活动页
+		优点：利于更新维护
+	         利于团队协作开发
+	         一套代码可以设置多个页面，
+	    缺点：但是相对于一个页面垃圾代码多
+	         对服务器造成压力
+	     -->
+	<link rel="stylesheet" href="css/外部引入.css" type="text/css">
+
+
+	<!-- 2,头部引入，一般用于主页
+	优点：不会对服务器造成压力
+	缺点：不利于更新维护 -->
+	<style>
+		div{
+			width: 100px;
+			height: 100px;
+			background-color: skyblue;
+		}
+	</style>
+</head>
+<body>
+	<!--1， 在标签内引入，以键值对属性，一般配合js使用
+	  优点：优先级高
+	  缺点：冗余代码多 -->
+	<div style="background-color: red;width: 100px;height: 100px;">
+	</div>
+	<div>
+		
+	</div>
+
+</body>
+</html>

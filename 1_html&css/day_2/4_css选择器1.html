@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>选择器</title>
+	<style>
+	/*1、标签名选择器，选择该页面上所有这个标签
+	    能不用尽量不用，会对其他样式进行干扰*/
+/*		div{
+			width: 100px;
+			height: 100px;
+			background-color: red;
+		}*/
+
+	/*2、类选择器，通过class后面的值进行选择，以.加class名去进行选择
+		特点：class可以重名，在页面中可以有多个相同的class
+		      一个标签可以有多个class，用空格隔开
+		      命名规则不可以以数字开头，尽量不要使用数字*/
+		.yiceng{
+			width: 100px;
+			height: 100px;
+			background-color: red;
+		}
+		.sanceng{
+			/*边框*/
+			/*边框的厚度   线性为实线    边框颜色*/
+			border: 5px solid blue;
+		}
+	</style>
+</head>
+<body>
+	<!-- 选择器：让我们可以更加精确地选择自己想要设置样式的标签 -->
+	<div class="yiceng">
+		第一层
+	</div>
+	<div class="yiceng sanceng">
+		第二层
+	</div>
+	<div class="sanceng">
+		第三层
+	</div>
+</body>
+</html>

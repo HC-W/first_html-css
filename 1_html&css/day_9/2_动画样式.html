@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			.div1{
+				width: 200px;
+				height: 200px;
+				background-color: red;
+				
+				/*使用动画*/
+				-webkit-animation: div1 2s;
+				-o-animation: div1 2s;
+				animation: div1 2s;
+				
+				/*动画名字*/
+				animation-name: div1;
+				/*动画运行时间*/
+				animation-duration: 1s;
+				/*动画时间曲线（函数）*/
+				animation-timing-function:linear;
+				/*动画延迟时间：循环播放时，首次运行延迟时间*/
+				animation-delay: 0s;
+				/*动画播放次数
+				infinite：无穷的*/
+				animation-iteration-count: infinite;
+				/*动画轮流反向播放*/
+				animation-direction: alternate;
+				/*动画停留在最后一帧*/
+				animation-fill-mode: forwards;
+				
+				
+				/*顺序：名字 运行时间  时间函数  延迟时间  运行次数  轮流方向或不反向    停留最后一帧或不是*/
+				/*默认值：*/
+				/*animation: name 0s ease 0s alternate-reverse backwards;*/
+				
+				/*消失的方法:*/
+				/*opacity: 0;
+				display: none;
+				visibility: hidden;默认visible为显示
+				rgba*/
+			}
+			.div1:hover{
+				/*动画播放状态：running   paused*/
+				animation-play-state: paused;
+			}
+			
+			
+			@-webkit-keyframes div1{
+				from{
+					-webkit-transform: translate(0, 0);
+					-moz-transform: translate(0, 0);
+					-ms-transform: translate(0, 0);
+					-o-transform: translate(0, 0);
+					transform: translate(0, 0);
+				}
+				to{
+					-webkit-transform: translate(200px, 200px);
+					-moz-transform: translate(200px, 200px);
+					-ms-transform: translate(200px, 200px);
+					-o-transform: translate(200px, 200px);
+					transform: translate(200px, 200px);
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="div1"></div>
+	</body>
+</html>

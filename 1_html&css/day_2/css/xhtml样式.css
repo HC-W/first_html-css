@@ -1,0 +1,16 @@
+.wrap .title{
+	font-size: 24px;
+}
+.btn input{
+	width: 105px;
+	height: 30px;
+	background-color: #fdfcf8;
+	border-bottom: 1px solid red;
+
+}
+.box span{
+	color: blue;
+}
+.box{
+	border: 1px dotted green;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>阴影</title>
+		<style type="text/css">
+			body{
+				background-color: cornflowerblue;
+			}
+			.div1{
+				margin: 100px;
+				width: 200px;
+				height: 200px;
+				background-color: red;
+				
+				/*盒子阴影
+				 可以设置很多项，但是每项有5个值
+				 阴影横向偏移（必写）
+				 阴影纵向偏移（必写）
+				 阴影模糊度
+				 阴影放大尺寸
+				 阴影颜色*/
+				box-shadow: 0px 5px 5px 5px #ccc,0px 0px 20px 10px blue;
+			}
+			.div2{
+				font-size: 30px;
+				color: white;
+				
+				/*文字阴影
+				 * 可以设置多项
+				 阴影横向偏移（必写）
+				 阴影纵向偏移（必写）
+				 阴影模糊度
+				 阴影颜色*/
+				text-shadow: 0px 0px 5px yellow,0px 0px 0px pink;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="div1"></div>
+		<div class="div2">下雨凉快</div>
+	</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>弹性布局</title>
+		<style type="text/css">
+			.div1{
+				/*width: 300px;*/
+				height: 500px;
+				border: 1px solid red;
+				
+				/*转换为弹性布局：默认延主轴（X轴）排列*/
+				display: flex;
+				
+				/*转换为行内弹性布局：由内容撑开宽高*/
+				/*display: inline-flex;*/
+				
+				/*设置主轴方向
+				 1、row:行 、row-reverse
+				 2、column:纵向，列  、column-reverse：把标签顺序反过来（可以做响应式），
+				       在左边还是在右边也会有变化*/
+				/*flex-direction: column-reverse;*/
+				
+				/*当一行(主轴)放不下时显示状态
+				 1、nowrap:(默认)不换行，等比缩放
+				 2、wrap:换行
+				 3、wrap-reverse:换行，但是上下顺序反向，从下面开始*/
+				/*flex-wrap:wrap;*/
+				
+				
+				/*主轴对齐方式
+				 1、flex-start:（默认）在主轴开始的位置
+				 2、flex-end:在主轴结束的位置，顺序不变，居右
+				 3、center:在主轴中间
+				 4、space-around:，空间包围内容，margin左右的效果，剩下的空间根据块的多少左右进行平分
+				 5、space-between:空间在内容之间，开头和结尾的块和左右没有margin，中间空间平分，开头和结尾分别居左或居右*/
+				/*justify-content: space-around;*/
+				
+				
+				/*单根主轴交叉轴对齐方式
+				 1、flex-start:交叉轴开始的地方
+				 2、flex-end:交叉轴结束的地方
+				 3、center：交叉轴在中间
+				 4、stretch:（默认）不设置高度，高度占满了*/
+				/*align-items:flex-end;*/
+				
+				
+				/*多根主轴时，交叉轴对齐方式（换行，有好几层）*/
+				/*1、stretch(默认)：不设置高度，等比占满
+				 2、flex-start:在交叉轴开始的地方
+				 3、flex-end:在交叉轴结束的地方
+				 4、center:在交叉轴中间
+				 5、space-around:空间包围内容
+				 6、space-between:空间在内容之间*/
+				
+				align-content: flex-start;
+				
+			}
+			/*.div1 div{
+				width: 100px;*/
+				/*height: 100px;*/
+				/*background-color: green;
+			}
+			.div1 div:nth-child(3){*/
+				/*元素的显示顺序，小的在前，同z-index相同*/
+				/*order:-1;*/
+				
+				/*让元素有自己的对齐方式*/
+				/*align-self: center;
+			}
+			.div1 div:nth-child(4){
+				align-self: flex-start;
+			}
+			.div1 div:nth-child(5){
+				align-self: flex-end;
+			}*/
+			
+			/*加给父级的
+			 * display:flex\inline-flex;
+			 flex-direction
+			 flex-wrap
+			 justify-content
+			 align-items
+			 align-content
+			 
+			 * 加给子级的
+			 * order
+			 * align-self*/
+		</style>
+	</head>
+	<body>
+		<div class="div1">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+			<div>4</div>
+			<div>5</div>
+		</div>
+	</body>
+</html>

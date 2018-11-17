@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>顺序</title>
+	<style>
+		div{
+			position: absolute;
+			width: 200px;
+			height: 200px;
+		}
+		/*堆叠顺序：默认,布局在后的定位元素，堆叠在上*/
+		.div1{
+			background-color: red;
+			z-index: 51;
+		}
+		.div2{
+			background-color: green;
+			/*设置定位元素的堆叠顺序,越大越靠上*/
+			z-index: 50;
+		}
+		.div3{
+			background-color: blue;
+		}
+	</style>
+</head>
+<body>
+	<div class="div1"></div>
+	<div class="div2"></div>
+	<div class="div3"></div>
+</body>
+</html>

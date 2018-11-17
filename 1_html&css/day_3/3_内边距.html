@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>内边距</title>
+	<style type="text/css">
+	.div1:hover{
+		border-color: green;
+	}
+		.div1{
+			width: 100px;
+			height: 100px;
+			background-color: black;
+			border: 5px solid red;
+			border-bottom-color: green;
+			border-top-style: dashed;
+			/*内边距
+			父子集关系的距离，可以单独设置方向，top\left\right\bottom*/
+			/*padding: 20px 30px 40px 50px;*/
+			padding-top: 30px;
+
+			/*注意：如果想不被内边距边框撑大盒模型
+			设置为怪异盒模型
+			怪异盒模型的组成：内容+外边距*/
+
+			/*怪异盒模型*/
+			box-sizing: border-box;
+		}
+		.div2{
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	<div class="div1">
+		<div class="div2">我是div2</div>
+	</div>
+</body>
+</html>

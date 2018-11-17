@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>渐变</title>
+		<style>
+			.div1{
+				width: 300px;
+				height: 300px;
+				/*border: 1px solid red;*/
+				
+				/*1、线性渐变、
+				 * 注意：颜色至少两个，最多不限
+				 * 首个参数可以设置渐变方向（right\left\top\bottom）
+				 */
+				background:-webkit-linear-gradient(top,red 30%,green 40%,blue 60%,orchid);
+				
+				/*2、径向渐变:方向定位
+				 * 首个参数可以设置圆心位置（x,y）:px、%、方位
+				 left top \left bottom\center center等*/
+				background: -webkit-radial-gradient(left top,red 30%,orange 40%,orchid 50%);
+				
+				background: -webkit-radial-gradient(33% 33%,#fff,#444,#fff);
+				border-radius: 50%;
+				
+			}
+		</style>
+	</head>
+	<body>
+		<div class="div1"></div>
+	</body>
+</html>

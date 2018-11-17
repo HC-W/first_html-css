@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	hello
+	<!-- 换行 -->
+	<br>
+	<!-- 分割线 -->
+	<hr>
+	world
+
+
+	<!-- 表格 -->
+	<!-- cellpadding:里面的文字和格子的距离
+		cellspacing ：外边距，格子和格子之间的距离 -->
+		<!-- 跨行：rowspan 即上下单元格合并
+		     跨列：colspan 即左右单元格合并-->
+	<table border="1" cellspacing="0" cellpadding="10">
+		<!-- 表的标题 -->
+		<caption>学生成绩表</caption>
+		<tr>
+			<!-- 表头th和单元格tb的区别：表头加粗和居中-->
+			<th>序号</th>
+			<th>姓名</th>
+			<th>成绩</th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>xiaoli</td>
+			<td rowspan="2">98</td>
+		</tr>
+		<tr>
+            <td>2</td>
+			<td>lili</td>
+		</tr>
+	</table>
+
+	
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>a标签</title>
+	<style type="text/css">
+		/*伪类*/
+		/*1、link :未访问的默认样式*/
+		.a1:link{
+			color: red;
+		}
+		/*2、hover 鼠标移入时的样式*/
+		.a1:hover{
+			/*鼠标移入变小手*/
+			/*cursor: pointer;*/
+			/*鼠标移入消失*/
+			/*cursor: none;*/
+			/*鼠标移入不进行改变*/
+			cursor: default;
+			color: yellow;
+			font-size: 30px;
+		}
+		/*3、正在访问时的样式*/
+		.a1:active{
+			font-size: 50px;
+			color: blue;
+		}
+		/*4、访问过后的样式*/
+		.a1:visited{
+			color: gray;
+		}
+
+		
+	</style>
+</head>
+<body>
+	<a href="#####" class="a1">你猜</a>
+	<a href="#####">你猜</a>
+</body>
+</html>

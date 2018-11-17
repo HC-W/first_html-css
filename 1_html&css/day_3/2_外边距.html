@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>外边距</title>
+	<style type="text/css">
+		/*外边距：margin
+		  同级元素之间的距离
+
+		  注意：纵向外边距叠加时，取较大的值
+		  横向外边距叠加时，相加
+
+		  行标签不能设置上下（纵向）外边距，只能设置左右外边距*/
+		div{
+			width: 100px;
+			height: 100px;
+
+			/*1个值：上下左右都是20*/      /*margin: 20px;*/
+			/*4个值：上，右，下，左   顺时针*/
+			/*margin: 10px 20px 30px 40px;*/
+			/*3个值：上，左右，下*/      /*margin: 10px 20px 30px;*/
+			/*2个值：上下，左右*/        /*margin: 10px 20px;*/
+
+            /*通过margin，可以让块标签居中，左右设置为auto自动 需要设置宽度*/
+			/*auto   自动分配值*/
+			margin: 0 auto;
+
+			/*单独设置某个方向:top\right\bottom\left*/
+			/*上边距*/    margin-top: 20px;
+		}
+		.div1{
+			background-color: red;
+		}
+		.div2{
+			background-color: green;
+		}
+		.div3{
+			background-color: blue;
+		}
+	</style>
+</head>
+<body>
+	<div class="div1">shenme1</div>
+	<div class="div2">shenme2</div>
+	<div class="div3">shenme3</div>
+</body>
+</html>

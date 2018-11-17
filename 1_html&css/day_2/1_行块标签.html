@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>行块标签</title>
+</head>
+<body>
+	<!-- 行块标签：
+	     1、在一行显示
+	     2、宽高默认由内容撑开
+	     3、可以设置宽高和纵向的外边距 -->
+
+<!-- 
+图片，可以只设置宽度或高度，图片会等比例缩放
+    绝对路径
+    <img src="网上图片的地址" alt="">
+    相对路径：不在同一个文件夹下时需要使用“../”返回上级然后访问，多层上级时使用多个“../”，需要叠加
+    <img src="../../img/1.png" alt=""> -->
+
+
+<!-- action  提交表单的地址，一般为后台地址
+     method  提交方式，POST和GET，POST不会显示在地址栏中
+      name=value-->
+     <!-- 表单必须有提交按钮，不然存在没有 意义-->
+    <form action="https://www.baidu.com/s" method="get">
+    	
+<!-- 这里的for和id连用，点击“账号”时也能显示text -->
+    	<label for="u">账号：
+    	<!-- 文本输入框 -->
+    	<input type="text" name="wd" id="u"><br/></label>
+    	密码：<input type="password" name="pwd"><br/>
+    	<!-- 提交按钮 :修改大小时，按钮不加背景颜色无法修改高度-->
+    	<input type="submit" name="" value="登录">
+    	<br/>
+
+
+<!-- 单选框：注意  name相同为一组
+后台识别为value -->
+    	<input type="radio" name="sex" value="nan">男
+    	<input type="radio" name="sex" value="nv">女
+    	<input type="submit" value="提交">
+
+
+    	<!-- 复选框  name要相同-->
+    	<input type="checkbox" name="hobby" value="eat">吃
+    	<input type="checkbox" name="hobby" value="drink">喝
+    	<input type="checkbox" name="hobby" value="play">玩
+    	<input type="checkbox" name="hobby" value="happy">乐
+    	<input type="submit" value="提交">
+    	<br/>
+
+    	<!-- 按钮：默认自带没有功能，需要自己加入功能 -->
+    	<input type="button" name="" value="123">
+
+
+    	<!-- 按钮：重置表单 -->
+    	<input type="reset" name="">
+
+
+    	<!-- 上传文件 -->
+    	<input type="file" name="">
+    	<br/>
+
+
+<!-- input类型包含：text,password,reset,file,radio,checkbox,submit,button -->
+    </form>
+
+<!-- 文本域 -->
+    <textarea name="" id="" cols="30" rows="10"></textarea>
+    行块标签：img,textarea,input
+</body>
+</html>

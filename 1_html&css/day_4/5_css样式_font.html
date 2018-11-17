@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.div1{
+			font-size: 16px;
+		}
+		.p1{
+			/*默认字体大小16px,最小字体大小12px,可以0但不可以1px*/
+			/*字体font-size和text-align、color可以继承，但是a标签除外*/
+			/*font-size: 2em;*/
+			/*eg: 如示例，字体出来后为30px*/
+			/*字体,根据浏览器的兼容性，查找提供字体，有就用，没有往下找，没有叠加性*/
+			font-family: STkaiti,SimHei;
+			/*字体粗细：lighetr,bold(600),bolder
+			100-900,有的字体有些粗细不能设置*/
+			font-weight: bold;
+			/*字体风格：斜体(italic)，倾斜(oblipue),norml(默认）*/
+			/*font-style: oblique;*/
+			font-style: italic;
+
+			width: 100px;
+			height: 100px;
+			border: 3px solid red;
+			/*超出时的显示状态：
+			1、hidden:超出隐藏
+			2、scroll:显示滑动条,超不超出都显示
+			3、auto:超出显示滚动条，不超出不显示*/
+			overflow: scroll;
+		}
+	</style>
+</head>
+<body>
+	<div class="div1">
+		<p class="p1">饿哦ihvnnianvidsofheof饿</p>
+	</div>
+</body>
+</html>

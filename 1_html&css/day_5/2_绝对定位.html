@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>绝对定位</title>
+	<style>
+	/*绝对定位(也可以清浮动)
+			应用场景：重叠布局（不在文本流，不影响其他标签的使用）
+
+			定位基准：
+			1、默认根据页面(浏览器)进行定位（可以滑动，页面动也会跟着动，同没有设置定位的区别就是可以定在页面的任何位置）
+			2、根据上一个祖辈级的定位元素(最近最亲的那个)，进行定位,如果祖辈级没有定位元素，则根据浏览器进行定位。*/
+
+			/*特点：
+			1、不在文本流
+			2、内容撑开宽高，（可以在一行显示）
+			3、可以设置宽高*/
+		body{
+			height: 3333px;
+		}
+		.div1{
+			width: 200px;
+			height: 200px;
+			background-color: red;
+			position: absolute;
+			right: 0;
+			top: 0；
+		}
+		.zb1{
+			width: 500px;
+			height: 500px;
+			background-color: black;
+			padding: 20px;
+			position: absolute;
+		}
+		.zb2{
+			width: 400px;
+			height: 400px;
+			background-color: blue;
+		}
+	</style>     
+</head>
+<body>
+	<div class="zb1">
+		<div class="zb2">
+			<div class="div1"></div>
+		</div>
+	</div>
+	
+</body>
+</html>

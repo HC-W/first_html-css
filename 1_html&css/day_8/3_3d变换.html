@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>3d变换</title>
+	<style type="text/css">
+		html,body,.all{
+			height: 100%;
+		}
+	/*3d变换的两个准备工作：
+	1、开3D：告诉父级，子级要进行3D变换
+		只要进行3D变换，父级就要开3D
+	2、开空间：给整个页面开一个空间
+	    给最外层3D变换元素的父级加*/
+	    .all{
+	    	width: 500px;
+	    	height: 500px;
+	    	background-color: black;
+	    /*开3d*/
+	    	transform-style: preserve-3d;
+	    	/*开空间：屏幕与里面内容间的距离为1000*/
+	    	perspective: 1000px;
+
+	    	/*3d变换基准:默认父级正中间点为基准点*/
+	    	perspective-origin:left top; 
+	    }
+		.div1{
+			width: 200px;
+			height: 200px;
+			background-color: red;
+			font-size: 50px;
+
+		/*	position: absolute;
+			left: 50%;
+			top: 50%;
+			margin-left: -100px;
+			margin-top: -100px;*/
+
+			/*过渡*/
+			transition: all 1s;	
+		}
+		.div1:hover{
+			transform: rotateY(180deg);
+			/*transform: translateZ(1000px);*/
+		}
+	</style>
+</head>
+<body>
+	<div class="all">
+		<div class="div1">div1</div>
+	</div>
+</body>
+</html>

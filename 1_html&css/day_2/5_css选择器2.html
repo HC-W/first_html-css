@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>选择器2</title>
+	<style type="text/css">
+	/*3、id选择器，定义时#+id名，一个标签只有一个id，id唯一，且页面只有一个，常与js配合
+	*/
+		#div1{
+			width: 200px;
+			height: 200px;
+			background-color: orange;
+		}
+
+	/*4、后代选择器   先选择父集，加上一个空格，再选择子集
+	    一级一级查找，可以累加，在后代中只有一个这个想要的名字时，可以直接查找*/
+	    .div1 .div2 .div3{
+	    	width: 50px;
+	    	height: 50px;
+	    	background-color: blue;
+	    }
+	</style>
+</head>
+<body>
+	<div class="div1" id="div1">
+		<div class="div2">
+			<div class="div3"></div>
+			
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>固定定位</title>
+	<style>
+	/*固定定位
+			永远根据浏览器进行定位（可以理解为浮动，飘在了能看到页面的一个位置不会动）*/
+			/*left\right\top\bottom*/
+			/*特点：
+			1、不在文本流
+			2、内容撑开宽高，（可以在一行显示）
+			3、可以设置宽高*/
+			/*<!-- 固定定位：*/
+	     /*一直固定在屏幕的某个位置的布局(广告，导航栏，返回顶部) -->*/
+		body{
+			height: 3333px;
+		}
+		.div1{
+			width: 300px;
+			height: 300px;
+			background-color: yellow;
+			position: fixed;   固定定位
+			left: 50%;         块的左边距离基准的左边50%
+			top: 50%;          块的上边距离基准的上部50%
+			    两个何在一起就是左上角距离上边和左边的距离，此时左上角在页面的中间
+			margin-left: -150px;      块的大小定义为300px，设置块的左边距为-150px,意思就是块整体向左边移动150px,让块的中间部分在左右方向上在页面中居中
+			margin-top: -150px;       同上，向上移动，让块的中间在上下方向上居中
+			     此时整个块的定位就在浏览器可以看到页面的中间，并且不会随着下拉而变动
+		}
+		.div2{
+			width: 400px;
+			height: 400px;
+			background-color: green;
+		}
+	</style>
+</head>           因为固定定位浮动，所以和下面没有定位的元素是互不干扰的
+<body>
+	     <div class="div1">一直固定在某个位置的布局</div>
+	     <div class="div2"></div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>倒影</title>
+		<style>
+			.div1{
+				width: 100px;
+				height: 100px;
+				/*background-color: red;*/
+				font-size: 30px;
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				margin-left: -50px;
+				margin-top: -50px;
+				
+				/*倒影
+				 1、倒影的方向（above\below\left\right）
+				 2、和倒影的间距
+				 3、渐变
+				 
+				 * 注意：倒影不占位置*/
+				-webkit-box-reflect: below 10px -webkit-linear-gradient(rgba(0,0,0,0),rgba(0,0,0,1));
+			}
+		</style>
+	</head>
+	<body>
+		<div class="div1">div1</div>
+	</body>
+</html>

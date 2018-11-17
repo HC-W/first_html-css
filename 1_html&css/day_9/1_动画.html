@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>动画</title>
+		<style>
+			.div1 {
+				width: 80px;
+				height: 80px;
+				background-color: red;
+				transition: all 2s;
+				border-radius: 50%;
+				position: absolute;
+				top: 30%;
+				left: 30%;
+				/*使用动画*/
+				-webkit-animation: move 4s;
+				-o-animation: move 4s;
+				animation: move 4s;
+			}
+			
+			.div2 {
+				width: 80px;
+				height: 40px;
+				background-color: gray;
+				position: absolute;
+				bottom: 0;
+				right: 0;
+				border-bottom-left-radius: 40px;
+				border-bottom-right-radius: 40px;
+			}
+			.div3{
+				width: 10px;
+				height: 10px;
+				background-color: white;
+				position: absolute;
+				top: 35px;
+				left: 35px;
+				border-radius: 50%;
+				
+			}
+			/*.div1:hover{
+				width: 300px;
+				height: 300px;
+				background-color: gold;
+			}*/
+			/*声明动画*/
+			/*注意：
+			 1、百分比的分配，按时间计算
+			 2、可控性，开始设置了什么样式，后面就要设置什么样式*/
+			
+			@-webkit-keyframes move {
+				0% {
+					-webkit-transform: translate(0, 0) rotate(0deg);
+					-moz-transform: translate(0, 0) rotate(0deg);
+					-ms-transform: translate(0, 0) rotate(0deg);
+					-o-transform: translate(0, 0) rotate(0deg);
+					transform: translate(0, 0) rotate(0deg);
+				}
+				20% {
+					-webkit-transform: translate(400px, 0) rotate(180deg);
+					-moz-transform: translate(400px, 0) rotate(180deg);
+					-ms-transform: translate(400px, 0) rotate(180deg);
+					-o-transform: translate(400px, 0) rotate(180deg);
+					transform: translate(400px, 0) rotate(180deg);
+				}
+				40% {
+					-webkit-transform: translate(0, 230px) rotate(0deg);
+					-moz-transform: translate(0, 230px) rotate(0deg);
+					-ms-transform: translate(0, 230px) rotate(0deg);
+					-o-transform: translate(0, 230px) rotate(0deg);
+					transform: translate(0, 230px) rotate(0deg);
+				}
+				60% {
+					-webkit-transform: translate(200px, -230px) rotate(180deg);
+					-moz-transform: translate(200px, -230px) rotate(180deg);
+					-ms-transform: translate(200px, -230px) rotate(180deg);
+					-o-transform: translate(200px, -230px) rotate(180deg);
+					transform: translate(200px, -230px) rotate(180deg);
+				}
+				80% {
+					-webkit-transform: translate(400px, 230px) rotate(360deg);
+					-moz-transform: translate(400px, 230px) rotate(360deg);
+					-ms-transform: translate(400px, 230px) rotate(360deg);
+					-o-transform: translate(400px, 230px) rotate(360deg);
+					transform: translate(400px, 230px) rotate(360deg);
+				}
+				100% {
+					-webkit-transform: translate(0, 0) rotate(0deg);
+					-moz-transform: translate(0, 0) rotate(0deg);
+					-ms-transform: translate(0, 0) rotate(0deg);
+					-o-transform: translate(0, 0) rotate(0deg);
+					transform: translate(0, 0) rotate(0deg);
+				}
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="div1">
+			<div class="div2"></div>
+			<div class="div3"></div>
+		</div>
+	</body>
+
+</html>

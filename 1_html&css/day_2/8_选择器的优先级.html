@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>优先级、权重值</title>
+	<style type="text/css">
+	/*权重值
+	标签名选择器：1
+	class选择器：10
+	id选择器：100
+
+	1、不可以越级比较
+	比如：div p span .img{}和.img{}，响应的是第二个。两种形式没有可比性
+	2、行内style优先级比其它的高
+	3、!important 优先级最高，慎用！*/
+		.div1 div{
+			color: red !important;
+		}
+		.div1 .div2{
+			color: blue;
+		}
+	</style>
+</head>
+<body>
+	<div class="div1" id="div1">
+		<div class="div2" id="div2">
+			颜色
+		</div>
+	</div>
+</body>
+</html>

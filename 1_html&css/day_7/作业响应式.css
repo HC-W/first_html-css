@@ -1,0 +1,24 @@
+@media screen and (max-width: 640px){
+	section{
+		min-width: 320px;
+	}
+	section .s_bottom .box .b_top .mb .ps .p1{
+		font-size: 25px;
+	}
+}
+@media screen and (max-width: 480px){
+	section .s_bottom .box{
+		width: 48%;
+	}
+	section .s_bottom .box .b_top .mb .ps .p1{
+		font-size: 30px;
+	}
+	section .s_bottom .box:nth-child(3n+2){
+		margin-left: 0;
+		margin-right: 0;
+	}
+	section .s_bottom .box:nth-child(2n){
+		margin-left: 4%;
+	}
+
+}

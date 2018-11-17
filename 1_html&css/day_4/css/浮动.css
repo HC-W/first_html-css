@@ -1,0 +1,36 @@
+
+	/*浮动
+	left\right*/
+	/*float:left;*/
+
+
+	/*浮动产生的影响：
+	     1、不在文本流,负面影响
+	     2、在一行显示
+	     3、默认顶部对齐
+	     4、可以清除默认占位符
+	     5、默认内容撑开宽高*/
+
+	/*应用场景
+	1、针对左右布局
+	2、块标签在一行显示，
+	    虽然display也可以，但是现在不用，后期display会有冲突
+	3、文字包围图片，
+	    随着页面的缩小会自动换行*/
+
+.div1{
+	border: 2px solid black;
+}
+.div1 div{
+	float: left;
+}
+.div1 .a{
+/*	width: 100px;
+	height: 100px;*/
+	background-color: red;
+}
+.div1 .b{
+	/*width: 200px;
+	height: 200px;*/
+	background-color: green;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>选择器4</title>
+	<style type="text/css">
+	/*7、通配符选择器，选择页面上的所有标签，一般用于初始化样式
+	    但是优先级最低*/
+	    *{
+	    	/*外边线*/
+	    	outline:none;
+	    	/*外边距*/
+	    	margin: 0;
+	    	padding: 0;
+	    }
+	    input{
+	    	outline:3px solid green;
+	    }
+		/*6、组合选择器*/
+		div.div1{
+			width: 100px;
+			height: 100px;
+			background-color: skyblue;
+		}
+	</style>
+</head>
+<body>
+	<div class="div1">1</div>
+	<p class="div1">2</p>
+	<div>3</div>
+	<input type="text" name="">
+</body>
+</html>

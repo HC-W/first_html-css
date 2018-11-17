@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>媒体查询</title>
+	<style>
+		body{
+			background-color: #ccc;
+		}
+		/*媒体查询：针对网页情况，可以写多个
+		可以替换上面定义的样式，也可以直接定义
+		格式严格遵守，only可写可不写
+		写了生效但不一定应用上，需要比较权重值
+		max-width:小于等于
+		min-width:大于等于*/
+		/*@media only screen and (min-width: 600px) and (max-width:799px){
+			body{
+				background-color: red;
+				color: white;
+			}
+		}
+		@media only screen and (min-width: 800px){
+			body{
+				background-color: green;
+			}
+		}
+		@media only screen and (min-width: 1000px){
+			body{
+				background-color: blue;
+			}
+		}*/
+
+
+		.div1{
+			width: 90%;
+			margin: 0 auto;
+			height: 100px;
+			background-color:red;
+			min-width: 640px;
+		}
+
+
+
+			/*头部引入*/
+		@media only screen and (min-width: 600px) and (max-width: 800px){
+			body{
+				background-color: red;
+		}
+	</style>
+	<!-- 外部引入：需要哪个引哪个 
+		          会对服务器造成压力-->
+	<link rel="stylesheet" href="媒体查询.css" media="screen and
+	(min-width:1200px)">
+</head>
+<body>
+	<!-- 整个响应式布局的核心 -->
+	<div class="div1"></div>
+</body>
+</html>

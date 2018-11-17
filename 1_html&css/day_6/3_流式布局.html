@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0 user-scalable=0,user-scalable=no,minimal-ui">
+	<title>流式布局:百分比布局</title>
+	<style>
+		*{
+			margin:0;
+		}
+		/*计算百分比：当前宽度/上下文宽度
+		永远占页面的多少，会随着页面的宽度变化而变化
+		纵向一般不设百分比，如果设置百分比需要知道body的高度*/
+		/*流式布局不能设置字体大小*/
+		/*流式布局必须设置定位百分比：定位横向宽度 margin-right\left */
+		.div1{
+			/*300px*/
+			width: 72.46376%;
+			height: 300px;
+			background-color: red;
+		}
+		.div2{
+			/*100*/
+			width: 33.33333%;
+			height: 100px;
+			background-color: green;
+		}
+	</style>
+</head>
+<body>
+	<div class="div1">
+		<div class="div2"></div>
+	</div>
+</body>
+</html>
